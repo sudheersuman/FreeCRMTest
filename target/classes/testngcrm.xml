@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Hub Spot Sanity Test Suite" verbose="4">
+
+	<listeners>
+		<listener class-name="org.qa.ExtentReportListener.ExtentReportListener" />
+		
+	</listeners>
+
+	<test name="hub spot sanity Test">
+		<classes>
+			<class name="org.crm.qa.testcases.LoginPageTest"/>
+			<class name="org.crm.qa.testcases.MainPageTest"/>
+			<class name="org.crm.qa.testcases.ContactsPageTest"/>
+		</classes>
+	</test>
+</suite>

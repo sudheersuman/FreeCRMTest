@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="4" name="Failed suite [Hub Spot Sanity Test Suite]">
+  <listeners>
+    <listener class-name="org.qa.ExtentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" verbose="4" name="hub spot sanity Test(failed)">
+    <classes>
+      <class name="org.crm.qa.testcases.MainPageTest">
+        <methods>
+          <include name="verifyLogoTest"/>
+          <include name="tearDown"/>
+          <include name="verifyPageTitleTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.crm.qa.testcases.MainPageTest -->
+      <class name="org.crm.qa.testcases.ContactsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createNewContactTest"/>
+        </methods>
+      </class> <!-- org.crm.qa.testcases.ContactsPageTest -->
+    </classes>
+  </test> <!-- hub spot sanity Test(failed) -->
+</suite> <!-- Failed suite [Hub Spot Sanity Test Suite] -->
